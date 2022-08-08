@@ -41,7 +41,7 @@ const Intro = () => {
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fritz-agricia/">
                         <img src={Linkedin} alt="" />  
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fritz-agricia/">
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/fritzagri/">
                         <img src={Instagram} alt="" />
                     </a>
                     
