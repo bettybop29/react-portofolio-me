@@ -13,10 +13,12 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+
 import { motion } from "framer-motion";
 
 const Intro = () => {
-    const transition = {duration : 2, type:'spring'}
+    const transition = {ease: "easeInOut", duration : 2, type:'spring'}
+    // const animate = { scale: [1, 1, 1.5, 1] }
 
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode
@@ -33,13 +35,13 @@ const Intro = () => {
                 </div>
                 <button className="button i-button">Hire me</button>
                 <div className="i-icons">
-                    <a href="https://github.com/bettybop29">
+                    <a target="_blank" rel="noreferrer" href="https://github.com/bettybop29">
                         <img src={Github} alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/in/fritz-agricia/">
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fritz-agricia/">
                         <img src={Linkedin} alt="" />  
                     </a>
-                    <a href="https://www.linkedin.com/in/fritz-agricia/">
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fritz-agricia/">
                         <img src={Instagram} alt="" />
                     </a>
                     
@@ -52,23 +54,32 @@ const Intro = () => {
                 <img src={Vector2} alt="" />
                 <img src={boy2} alt="" />
                 <motion.img
+                    className="floating-div" 
                     initial={{left:'-36%'}}
                     whileInView={{left:'-24%'}}
                     transition={transition}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                     src={glassesimoji} 
                     alt="" />
-                <motion.div 
+                <motion.div
+                    className="floating-div" 
                     initial={{top:"-4%", left:"74%"}}
                     whileInView={{left:'23rem'}}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                     transition={transition}
-                style={{top:'-4%', left:'68%', color: darkMode? 'black' : '' }}>
+                    style={{top:'-4%', left:'68%', color: darkMode? 'black' : '' }}>
                     <FloatingDiv image={Crown} txt1='Web' txt2='Developer'/>
                 </motion.div>
                 <motion.div
+                    className="floating-div" 
                     initial={{top:"18rem", left:"9rem"}}
                     whileInView={{left:'-2rem'}}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                     transition={transition}
-                style={{top:'18rem', left:'0%', color: darkMode? 'black' : '' }}>
+                    style={{top:'18rem', left:'0%', color: darkMode? 'black' : '' }}>
                     <FloatingDiv image={thumbup} txt1='Best design' txt2='Award'/>
                 </motion.div>
                 <div className="blur" style={{background:"rgb(238 210 255)"}}></div>

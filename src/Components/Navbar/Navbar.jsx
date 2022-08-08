@@ -14,19 +14,19 @@ const Navbar = () =>    {
             <div className="n-right">
                 <div className="n-list">
                     <ul>
-                        <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
+                        <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass' className="link">
                             <li>Home</li>
                         </Link>
-                        <Link spy={true} to='Services' smooth={true} >
+                        <Link spy={true} to='Services' smooth={true} className="link">
                             <li>Services</li>   
                         </Link>
-                        <Link spy={true} to='Experience' smooth={true} >
+                        <Link spy={true} to='Experience' smooth={true} className="link">
                             <li>Experience</li>   
                         </Link>
-                        <Link spy={true} to='Portofolio' smooth={true} >
+                        <Link spy={true} to='Portofolio' smooth={true} className="link">
                             <li>Portfolio</li>                      
                         </Link>
-                        <Link spy={true} to='Testimonials' smooth={true} >
+                        <Link spy={true} to='Testimonials' smooth={true} className="link">
                             <li>Testimonials</li>   
                         </Link>
                     </ul>

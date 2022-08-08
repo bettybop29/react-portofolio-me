@@ -2,6 +2,7 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    
 }
 .n-left{
     flex: 1;
@@ -30,6 +31,9 @@
     margin-right: 4rem;
     list-style: none;
     cursor: pointer;
+}
+.link:hover{
+    color: var(--orange);
 }
 .n-list>ul>li:hover{
     cursor: pointer;

@@ -9,6 +9,7 @@ import Portofolio from './Components/Portofolio/Portofolio';
 import Testimonials from './Components/Testemonials/Testimonials';
 import Contact from './Components/Contacts/Contact';
 import Footer from './Components/Footer/Footer';
+
 import { themeContext } from './Context'
 import { useContext } from 'react';
 
@@ -31,6 +32,7 @@ function App() {
       <Testimonials/>
       <Contact/>
       <Footer/>
+      
     </div>
   );
 }

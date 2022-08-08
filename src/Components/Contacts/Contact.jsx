@@ -37,10 +37,10 @@ const Contact = () => {
                 </div>
             </div>
             <div className="c-right">
-                <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name="to_name" className="user" placeholder="Name" />
+                <form  ref={form} onSubmit={sendEmail}>
+                    <input  type="text" name="to_name" className="user" placeholder="Name" />
                     <input type="text" name="from_name" className="user" placeholder="Email" />
-                    <textarea name="message" className="user" placeholder="Message"></textarea>
+                    <textarea  name="message" className="user" placeholder="Message"></textarea>
                     <div className="blur c-blur1" style={{ background:"var(--purple)" }}></div>
                     <input type="submit" className="button" value="Send" />
                     <span>{done && "Thanks"}</span>
